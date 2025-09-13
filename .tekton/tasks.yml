@@ -3,7 +3,6 @@ apiVersion: tekton.dev/v1beta1
 kind: Task
 metadata:
   name: cleanup
-  namespace: default
 spec:
   workspaces:
     - name: source
@@ -40,7 +39,6 @@ apiVersion: tekton.dev/v1beta1
 kind: Task
 metadata:
   name: nose
-  namespace: default
 spec:
   workspaces:
     - name: source
